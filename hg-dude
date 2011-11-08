@@ -51,7 +51,6 @@ while true; do
       eval icon_path=$icon_path # to expand ~
       if [ "$changes" != "no changes found" ]; then
         notify $icon_path "New commits in $repo_name" "$changes"
-        hg pull # :)
       fi
 
       cd - &>/dev/null
